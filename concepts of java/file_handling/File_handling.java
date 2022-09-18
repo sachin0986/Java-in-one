@@ -32,10 +32,46 @@
  30) toURL()
 */
 
+/* 1) In this program we accepts a file or directory named "form" 
+ then the program will cheek if that file or directory physically 
+ exsist or not and display properties.
+  */
 // code 
 
 import java.io.*;
 public class File_handling 
 {
-    
+    public static void main(String args[]) throws IOException
+    {
+
+    File f = new File("C:\\Users\\sachin\\Desktop\\form.txt");
+
+    if(f.createNewFile())
+    {
+        System.out.println("File Created " + "\n" + "Detalils are : ");
+    }
+
+    else
+    {
+        System.out.println("ERROR to create file..!");
+    }
+    System.out.println("Filee name: " + f.getName());
+    System.out.println("Path: " + f.getPath());
+    System.out.println("Absolute path: " + f.getAbsolutePath());
+    System.out.println("Parent: " + f.getParent());
+    System.out.println("Exists: " + f.exists());
+
+    if(f.exists())
+    {
+        System.out.println("Is writeable: " + f.canWrite());
+        System.out.println("Is readable: " + f.canRead());
+        System.out.println("Is a Directory: " + f.isDirectory());
+        System.out.println("File size in bytes: " + f.length());
+    }
+
+    else
+    {
+        System.out.println("ERROR....!" + "\n" + "Make sure the details you entered in code is correct.");
+    }
+    }
 }
