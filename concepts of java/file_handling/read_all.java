@@ -75,7 +75,7 @@ public class read_all
 
         else 
         {
-            System.out.println("ERROR... Cheek the you enterEd ");
+            System.out.println("ERROR... Cheek the path you entered ");
         }
     }
   public static void main(String args[]) 
