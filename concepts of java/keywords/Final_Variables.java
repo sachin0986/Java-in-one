@@ -4,6 +4,8 @@ can't be changed */
 
 package keywords;
 
+import java.util.*;
+
 public class Final_Variables 
 {
      //simple final variable decleration 
@@ -38,11 +40,24 @@ public class Final_Variables
         System.out.println("int = " + a + "\n" + "String = " + c + "\n" + "long = " + d + "\n" + "double = " + pi);
 
     }
+
+    
+// implementing final keyword with array 
+    void array()
+    {
+        final int arr[] = {1,45,67,89,0}; //array
+
+
+        for(final int i : arr)   //forEach loop with final keyword
+        System.out.println(i + " ");
+    }
     public static void main(String args[])
     {
         Final_Variables Fv = new Final_Variables();
         //Fv.simple();
 
-        Fv.multiple();
+        //Fv.multiple();
+
+        Fv.array();
     }    
 }
