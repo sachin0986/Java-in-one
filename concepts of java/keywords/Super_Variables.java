@@ -14,8 +14,8 @@ class maximu
 
     void show()
     {
-        //using the super keyword we can access the super calls variable 
-         
+        //using the super keyword we can access the Super-class variable 
+
         System.out.println("max = " + super.max);
     }
  }
